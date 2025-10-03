@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <meta name="description" content="Calculator">
+
+  <link rel="icon" href="calc.jpg">
+
+  <!-- Font Awesome Twitter,Facebookなどのアイコン用フォント index.cssよりも前に定義...index.css high priority -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Font Awesome animation -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css"
+    type="text/css" media="all" />
+
+  <link rel="stylesheet" href="css/calculator.css">
+</head>
+
+<body>
+  <div class="back">
+    <button id="btn99" class="back" type="button" onclick="history.back()">back</button>
+  </div>
+  <header>
+    <h1>Calculator</h1>
+  </header>
+  <div class="wrapper">
+    <div class="f-container">
+      <div class="f-item">
+        <input type="number" value="1" id="num1">
+      </div>
+      <div class="f-item">
+        <select id="calcType">
+          <option value="type-add">+</option>
+          <option value="type-multiply">×</option>
+          <option value="type-divide">÷</option>
+          <option value="type-substract">-</option>
+
+        </select>
+      </div>
+      <div class="f-item">
+        <input type="number" value="2" id="num2">
+      </div>
+      <div class="f-item">
+        <button id="btnEqual" type="button">=</button>
+      </div>
+      <div class="f-item">
+        <div id="result"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      <!-- Font Awesome Twitter,Facebookなどのアイコン用フォント -->
+      <!-- https://fontawesome.com/v4.7.0/icons/ でアイコンを探せるよ。 -->
+      <!-- https://saruwakakun.com/html-css/basic/font-awesome#san2 アイコンの設定いろいろ -->
+      <!-- アイコンの大きさ -->
+      <i class="fa fa-cog fa-spin animated font05" aria-hidden="true"></i>
+      <span class="mgn-01">copyright 2025 SHARMA BINOD</span>
+      <i class="fa fa-bicycle faa-passing animated font06" aria-hidden="true"></i>
+    </p>
+  </footer>
+
+  <script src="js/calc.js"></script>
+</body>
+
+</html>

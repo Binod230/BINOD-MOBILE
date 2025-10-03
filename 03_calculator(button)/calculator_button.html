@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <meta name="description" content="Calculator">
+
+  <link rel="icon" href="calc.jpg">
+
+  <!-- Font Awesome Twitter,Facebookなどのアイコン用フォント index.cssよりも前に定義...index.css high priority -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Font Awesome animation -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css"
+    type="text/css" media="all" />
+
+  <link rel="stylesheet" href="css/calculator2.css">
+</head>
+
+<body>
+  <div class="back">
+    <button id="btn99" class="back" type="button" onclick="history.back()">back</button>
+  </div>
+  <header>
+    <h1>Calculator</h1>
+  </header>
+
+  <div class="wrapper">
+    <p> 入力した順番に計算をしていく計算機です。</p>
+    <div class="f-container">
+      <div class="f-box">
+
+        <div class="f-item" id="calcLog"></div>
+        <div class="f-item" id="result">0</div>
+        <div class="f-item btn" id="cancel">C</div>
+        <div class="f-item btn" id="div">/</div>
+        <div class="f-item btn" id="num7">7</div>
+        <div class="f-item btn" id="num8">8</div>
+        <div class="f-item btn" id="num9">9</div>
+        <div class="f-item btn" id="mult">×</div>
+        <div class="f-item btn" id="num4">4</div>
+        <div class="f-item btn" id="num5">5</div>
+        <div class="f-item btn" id="num6">6</div>
+        <div class="f-item btn" id="sub">-</div>
+        <div class="f-item btn" id="num1">1</div>
+        <div class="f-item btn" id="num2">2</div>
+        <div class="f-item btn" id="num3">3</div>
+        <div class="f-item btn" id="add">+</div>
+        <div class="f-item btn" id="num0">0</div>
+        <div class="f-item btn" id="equal">=</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      <!-- Font Awesome Twitter,Facebookなどのアイコン用フォント -->
+      <!-- https://fontawesome.com/v4.7.0/icons/ でアイコンを探せるよ。 -->
+      <!-- https://saruwakakun.com/html-css/basic/font-awesome#san2 アイコンの設定いろいろ -->
+      <!-- アイコンの大きさ -->
+      <i class="fa fa-cog fa-spin animated font05" aria-hidden="true"></i>
+      <span class="mgn-01">copyright 2024 SHARMA BINOD</span>
+      <i class="fa fa-bicycle faa-passing animated font06" aria-hidden="true"></i>
+    </p>
+  </footer>
+
+  <script src="js/calculator2.js"></script>
+</body>
+
+</html>
