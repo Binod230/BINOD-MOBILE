@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+  text-align: center;
+  background-color: rgba(233, 168, 227, 0.6);
+  background-blend-mode: soft-light;
+  background-image: url(../img/ful.jpg);
+  background-size: cover;
+}
+
+header,
+main,
+footer,
+h1,
+h2,
+h3,
+p,
+div,
+table,
+.field,
+.btn-area,
+.filler01 {
+  margin: 0.5em 0em 0em 0em;
+  padding: 0.1em;
+}
+
+th,
+td {
+  line-height: 1.2em;
+  padding: 0.1em;
+}
+
+/*******************************************************/
+/* 見出し                                              */
+/*******************************************************/
+h1 {
+  color: rgb(165, 243, 243);
+}
+
+h2 {
+  /* color: grey; */
+  color: whitesmoke;
+  font-weight: 1000;
+}
+
+/*******************************************************/
+/* メイン                                              */
+/*******************************************************/
+.field01 {
+  position: relative;
+  height: 5em;
+}
+
+/* MEMO 入力エリア */
+.field02 {
+  position: relative;
+  height: 10em;
+}
+
+/* ラベル */
+label {
+  position: absolute;
+  left: 0.5em;
+  color: whitesmoke;
+  font-weight: 1000;
+}
+
+label::after {
+  margin-left: 1.0em;
+  padding: 0px 6px 0px 6px;
+  border-radius: 4px;
+  font-size: 0.6em;
+  color: white;
+  background-color: #c44;
+  content: "必要";
+}
+
+/* テキストエリア */
+textarea {
+  position: absolute;
+  top: 2em;
+  left: 3em;
+}
+
+/* ★自分でコーディングする！(code by yourself)...  疑似要素「::placeholder」を使って、textareaの文字の色を定義する。*/
+
+/* ボタン */
+.btn-area {
+  margin-left: 3em;
+  text-align: left;
+}
+
+#save,
+#select,
+#delete,
+#allclear {
+  padding: 0.5em;
+  border-radius: 0.3em;
+  color: whitesmoke;
+  font-size: 1em;
+  background: rgb(26, 212, 212);
+  cursor: pointer;
+  /*カーソルをポインターの形（かたち）にする*/
+}
+
+table {
+  table-layout: fixed;
+  width: 80%;
+  margin-left: 3em;
+  border-collapse: collapse;
+  opacity: 0.9;
+}
+
+table th {
+  background: gray;
+}
+
+table th,
+table td {
+  padding: 0.5em 0;
+  border: solid 0.1em #fff;
+  color: white;
+  text-align: center;
+}
+
+table tr {
+  background: #46aef7;
+}
+
+.width10 {
+  width: 10%;
+}
+
+.width30 {
+  width: 30%;
+}
+
+.width60 {
+  width: 60%;
+}
+
+/* SweetAlert */
+.swal2-title,
+.swal2-content {
+  color: grey !important;
+  font-weight: bold !important;
+}
+
+/********************************************************/
+/* レスポンシブ対応　メディアクエリを使ってCSSを切り替える */
+/* https://www.design-memo.com/coding/css-media-queries */
+/********************************************************/
+/* mobileのときのスタイル */
+@media screen and (max-width: 480px) {
+
+  /* ラベル */
+  label {
+    left: 0.1em;
+  }
+
+  /* テキストエリア */
+  textarea {
+    left: 0.1em;
+  }
+
+  /* ボタン */
+  .btn-area {
+    margin-left: 0.1em;
+  }
+
+  table {
+    width: 100%;
+    margin-left: 0.1em;
+  }
+}
+
+/*******************************************************/
+/* class=back                                         */
+/* id=btn99 backボタン                                 */
+/*******************************************************/
+.back {
+  text-align: left;
+}
+
+#btn99 {
+  padding: 0.5em;
+  border-radius: 0.3em;
+  color: whitesmoke;
+  font-size: 1.5em;
+  background: rgb(26, 212, 212);
+  cursor: pointer;
+  /*カーソルをポインターの形（かたち）にする*/
+}

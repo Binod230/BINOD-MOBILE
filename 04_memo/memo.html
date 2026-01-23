@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メモ機能（きのう）</title>
+
+  <link rel="icon" href="hint.ico">
+  <link rel="stylesheet" href="css/memo.css">
+</head>
+
+<body>
+  <div class="back">
+    <button id="btn99" type="button" onclick="history.back()">back</button>
+  </div>
+
+  <header>
+    <h1>メモ機能（きのう）</h1>
+    <h2>LocalStorage</h1>
+  </header>
+
+  <main>
+    <div class="field01">
+      <label for="textKey">Key:</label>
+      <textarea id="textKey" name="textKey" row="1" cols="40" autofocus placeholder="キーを入力してください"></textarea>
+    </div>
+
+    <div class="field02">
+      <label for="textMemo">Memo:</label>
+      <textarea id="textMemo" rows="10" cols="50" placeholder="メモを入力"></textarea>
+    </div>
+
+    <div class="btn-area">
+      <input id="save" type="submit" class="btn" value="保存">
+    </div>
+    <table id="table1">
+      <tr>
+        <th class="width10">選択</th>
+        <th class="width30">Key</th>
+        <th class="width60">Memo</th>
+      </tr>
+      <tbody id="list">
+      </tbody>
+    </table>
+    </table>
+    <div class="btn-area">
+      <input id="select" type="button" class="btn" value="選択">
+       <input id="delete" type="button" class="btn" value="削除">
+       <input id="allclear" type="button" class="btn" value="全て削除">
+    </div>
+  </main>
+
+  <script src="js/memo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+html {
+  /* ブラウザのデフォルトが16px                        */
+  /* デフォルトの16pxの代わりに1emが10pxになるように調整 */
+  font-size: 62.5%;
+}
+
+body {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  /* 16px */
+  font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+  text-align: center;
+  background-color: rgba(233, 168, 227, 0.6);
+  background-blend-mode: soft-light;
+  /* background-image: url(../img/backimg.JPG);*/
+  background-size: cover;
+  overflow: hidden;
+}
+
+header,
+main,
+footer,
+h1,
+h2,
+h3,
+p,
+div,
+table,
+.field,
+.btn-area,
+.filler01 {
+  margin: 0.5em 0em 0em 0em;
+  padding: 0.1em;
+}
+
+/*******************************************************/
+/* ゲーム全体                                           */
+/*******************************************************/
+.wrapper {
+  position: relative;
+  /*相対位置*/
+  max-width: 100vw;
+  /*すべての要素をbox-sizing:border-boxとしているので全て含めてmin-width:100vwに*/
+  min-height: 100vh;
+  /*すべての要素をbox-sizing:border-boxとしているので全て含めてmin-height:100vhに*/
+  margin: 0;
+  padding: 0;
+  padding-bottom: 23px;
+  /*footer+paddingの高さ*/
+  text-align: center;
+}
+
+header {
+  margin-top: 8px;
+  color: rgb(255, 251, 0);
+  font-size: 38px;
+  font-weight: bold;
+  text-align: center;
+  background: rgb(71, 71, 71);
+}
+
+.message-container {
+  margin-bottom: 20px;
+  font-size: 2em;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.time-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0px;
+  justify-content: center;
+  background: #ffd347;
+  /* height: 100px;
+  line-height: 100px;
+  font-size: 50px;
+  margin-bottom: 10px; */
+}
+
+.time-item {
+  margin: 10px 0px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 25px;
+}
+
+i {
+  color: grey;
+}
+
+#timer {
+  font-size: 50px;
+}
+
+.timer-fontColor_hidden {
+  color: #ffd347;
+}
+
+.timer_appear {
+  transition: 1s;
+}
+
+/****************************************/
+/* ボタンエリア                          */
+/****************************************/
+.btn-container {
+  margin: 0px 100px 5px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.btn-area {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 24px;
+  color: whitesmoke;
+  background: grey;
+  border: solid 2px #333;
+  user-select: none;
+  cursor: pointer;
+  /*カーソルをポインターの形（かたち）にする*/
+}
+
+.js-inactive {
+  opacity: 0.6;
+}
+
+/* protect：ホバーやクリックなどのマウスイベントを無効（むこう）にする*/
+.js-unclickable {
+  pointer-events: none;
+}
+
+/*******************************************************/
+/* footer                                              */
+/*******************************************************/
+footer>p {
+  position: absolute;
+  /*←絶対位置*/
+  bottom: 10px;
+  /*下に固定*/
+  width: 100%;
+  margin: 0px;
+  padding: 1px;
+  color: whitesmoke;
+  font: 16px Rajdhani;
+  text-align: center;
+  background: rgba(1, 24, 31, 0.7);
+}
+
+/********************************************************/
+/* レスポンシブ対応　メディアクエリを使ってCSSを切り替える */
+/* https://www.design-memo.com/coding/css-media-queries */
+/********************************************************/
+/* mobileのときのスタイル */
+@media screen and (max-width: 480px) {
+  body {
+    /*10秒台なら花火を打ち上げる add*/
+    background-position: center center;
+    background-size: auto 900px;
+  }
+
+  .btn-container {
+    margin: 0px 2px 20px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  footer>p {
+    margin: 0px;
+    padding: 0px;
+  }
+
+}
+
+/*******************************************************/
+/* class=back                                         */
+/* id=btn99 backボタン                                 */
+/*******************************************************/
+.back {
+  text-align: left;
+}
+
+#btn99 {
+  padding: 0.5em;
+  border-radius: 0.3em;
+  color: whitesmoke;
+  font-size: 1.5em;
+  background: rgb(26, 212, 212);
+  cursor: pointer;
+  /*カーソルをポインターの形（かたち）にする*/
+}

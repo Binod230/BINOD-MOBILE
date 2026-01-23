@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>時間当てクイズ</title>
+
+    <!-- Font Awesome Twitter,Facebookなどのアイコン用フォント index.cssよりも前に定義...index.css high priority -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/timeguess.css">
+    <link rel="icon" href="timeguess.ico">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class = "back">
+        <button id="btn99" type="button" onclick="history.back()">back</button>
+      </div>
+
+      <header>Time Guess Quiz</header>
+      <div class="message-container">
+        <i class="fa fa-heart faa-tada animated" aria-hidden="true"></i>
+        ちょうど１０秒でストップしてね！
+        <i class="fa fa-heart faa-tada animated" aria-hidden="true"></i>
+      </div>
+      <div class="time-container">
+        <div class="time-item"><i class="fa fa-heart faa-tada animated" aria-hidden="true"></i></div>
+        <div id="timer" class="time-item"> 00:00.000 </div>
+        <div class="time-item"><i class="fa fa-heart faa-tada animated" aria-hidden="true"></i></div>
+      </div>
+
+      <div class="btn-container">
+        <div class="btn-area">
+          <div class="btn" id="start" type="button">Start</div>
+          <div class="btn" id="stop" type="button">Stop</div>
+          <div class="btn" id="reset" type="button">Reset</div>
+        </div>
+      </div>
+
+    </div>
+    <footer>
+      <p>© Copyright 2025 SHARMA BINOD s247065</p>
+    </footer>
+    <script src="js/timeguess.js"></script>
+  </body>
+</html>
