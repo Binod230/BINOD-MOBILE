@@ -39,6 +39,28 @@ table,
   margin: 0.5em 0em 0em 0em;
   padding: 0.1em;
 }
+.back {
+  text-align: left;
+}
+
+#btn99 {
+  padding: 0.7em 1.2em;
+  border-radius: 0.6em;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#btn99:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
 
 /*******************************************************/
 /* ゲーム全体                                           */

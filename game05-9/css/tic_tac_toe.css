@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+html{
+    font-size: 16px;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    line-height: normal;
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+    background: rgb(233, 168, 227);
+    overflow: hidden;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    margin-top: 8px;
+    color: rgb(255, 251, 0);
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(71, 71 71);
+}
+.back {
+    text-align: left;
+}
+
+#btn99 {
+    padding: 0.7em 1.2em;
+    border-radius: 0.6em;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#btn99:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+}
+.wrapper{
+    position: realtive;
+    max-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 23px;
+    text-align: center;
+}
+
+.game-container{
+    padding: 40px 0;
+}
+/* class-message^container*/
+
+.message-container{
+    margin-bottom: 20px;
+    font-size: 2em;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+.js-hidden{
+    display: none;
+}
+
+.square-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 200px;
+}
+
+.square-box{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 2px #333;
+}
+
+.square{
+    position: relative;
+    width: calc(196px/3);
+    height: calc(196px/3);
+    border: solid 2px #333;
+}
+
+/* penguibs*/
+.js-pen-checked::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 61px;
+    height: 61px;
+    content: '';
+    background-image: url(../img/penguins.jpg);
+    background-size: contain;
+}
+
+/* bear */
+.js-bear-checked::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 61px;
+    height: 61px;
+    content: '';
+    background-image: url(../img/whitebear.jpg);
+    background-size: contain;
+}
+.js-clickable{
+    content: "";
+}
+
+/* protect */
+.js-unclickable{
+    pointer-events: none;
+}
+
+/* winner-line high -line*/
+.js-pen_highLight{
+    border: solid 2px red;
+}
+.js-bear_highLight{
+    border: solid 2px blue;
+}
+
+.btn{
+    margin-top: relative;
+    padding: 12px;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-size: 24px;
+    background: rgb(26, 212, 212);
+    user-select: none;
+    cursor: pointer;
+}
+
+.back{
+    margin-top: 8px;
+    text-align: left;
+}
+
+/* NEW GAME */
+.btn-container{
+    padding-top: 40px;
+}
+
+/* id = "btn90" */
+#btn90:hover{
+    background-color: #ffd347;
+    transition-duration: 0.4s;
+}
+
+.level-container{
+    margin: 0px 100px 20px;
+    font-size: 1em;
+    font-weight: bold;
+}
+.level-box{
+    display: flex;
+    justify-content: space-around;
+}
+.level{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 24px;
+    user-select: none;
+    cursor: pointer;
+}
+.level-non-selected{
+    color: whitesmoke;
+    background: grey;
+    border: solid 2px #333;
+}
+.level-selected{
+    color: grey;
+    background: #ffd347;
+    border: solid 2px #333;
+}
+
+footer>p{
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    margin: 0px;
+    padding: 1px;
+    color: whitesmoke;
+    font: 16px Rajdhani;
+    text-align: center;
+    background: rgba(1, 24, 31, 0.7);
+}
+
+@media screen and (max-width: 480px){
+    .wrapper{
+        padding-bottom: 23px;
+    }
+    .btn-container{
+        padding-top: 2px;
+    }
+    header{
+        font-size: 24px;
+    }
+    #msgtext{
+        font-size: 20px;
+    }
+}

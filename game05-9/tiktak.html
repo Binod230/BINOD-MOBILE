@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang ="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <title>Tic Tac Toe</title>
+
+    <link rel ="icon" href ="tic_tac_toe.ico">
+    <link rel = "stylesheet" href = "css/animate.css">
+    <link rel ="stylesheet" href ="css/tic_tac_toe.css">
+</head>
+
+<body>
+    <div class ="back">
+        <button id ="btn99" class ="btn" type="button" onclick="history.back()">back</button>
+    </div>
+    <div class ="wrapper">
+        <header>Tic Tac Toe(VS Computer)</header>
+        <div class ="game-container">
+            <div class = "level-container">
+                <div class="level-box" id="levelBox">
+                <div class="level" id="level_1" type = "button">Level1</div>
+                <div class="level" id="level_2" type = "button">Level2</div>
+                <div class="level" id="level_3" type = "button">Level3</div>
+            </div>
+            </div>
+            <div class ="message-container">
+                <div id = "msgtext"></div>
+            </div>
+        <div class ="square-container">
+            
+                <div class="square-box" id= "squaresBox">
+                <div class ="square" id ="a_1"></div>
+                <div class ="square" id ="a_2"></div>
+                <div class ="square" id ="a_3"></div>
+                <div class ="square" id ="b_1"></div>
+                <div class ="square" id ="b_2"></div>
+                <div class ="square" id ="b_3"></div>
+                <div class ="square" id ="c_1"></div>
+                <div class ="square" id ="c_2"></div>
+                <div class ="square" id ="c_3"></div>
+            </div>
+        </div>
+        <div class = "btn-container">
+            <div class="js-hidden" id="newgame-btn">
+                <button id="btn90" class="btn" type="button">New Game</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© Copyright 2025 s247065 SHARMA BINOD</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src ="js/snowfall.jquery.min.js"></script> 
+    <script src="js/tic_tac_toe.js"></script>
+</body>
+</html>
